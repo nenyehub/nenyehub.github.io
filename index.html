@@ -1,18 +1,133 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Chinenye Ndili</title>
-	<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chinenye Ndili - About Me</title>
+  <style>
+    :root {
+      --primary-color: #2a5d9f;
+      --text-color: #222;
+      --bg-color: #fdfdfd;
+      --accent-bg: #f3f6fc;
+    }
+
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      margin: 0;
+      color: var(--text-color);
+      line-height: 1.6;
+      background-color: var(--bg-color);
+    }
+
+    header {
+      background-color: var(--accent-bg);
+      text-align: center;
+      padding: 40px 20px;
+      border-bottom: 2px solid #e0e0e0;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 0;
+      color: var(--primary-color);
+    }
+
+    p.subtitle {
+      margin: 8px 0 16px;
+      font-size: 1rem;
+      color: #444;
+    }
+
+    nav {
+      margin-top: 12px;
+    }
+
+    nav a {
+      color: var(--primary-color);
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 5px;
+      color: var(--primary-color);
+      margin-top: 0;
+    }
+
+    section p {
+      font-size: 1rem;
+      margin-bottom: 1em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      background-color: var(--accent-bg);
+      border-top: 2px solid #e0e0e0;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    footer a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 24px 10px;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+      main {
+        padding: 0 15px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-	<h1>About Me</h1>
-	<p>Hello, my name is Chinenye Ndili and I am a part time data science software contractor.</p>
-	<p>I earned a Bachelors of Science degree in computer science from the University of Hawaii at Manoa and completed undergraduate deep learning research under the mentorship of Dr. Peter Sadowski.</p>
-	<p>
-		You can see my resume here: <a href="resume.html">link</a>
-	</p>
-	<p>This website was styled with Spectre.css</p>
+  <header>
+    <h1>Chinenye Ndili</h1>
+    <p class="subtitle">Aspiring Christian leader with industry and ministry experience.</p>
+    <nav>
+      <a href="mailto:nenye@ndili.net">Email</a> |
+      <a href="https://www.linkedin.com/in/chinenye-ndili" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/nenyehub" target="_blank">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>Hello, my name is <strong>Chinenye Ndili</strong> and I am a part‑time data science software contractor.</p>
+
+      <p>I earned a Bachelor of Science degree in Computer Science from the <strong>University of Hawai’i at Mānoa</strong> and completed undergraduate deep learning research under the mentorship of Dr. Peter Sadowski.</p>
+
+      <p>You can view my résumé <a href="https://nenyehub.github.io/resume.html" target="_blank" rel="noopener noreferrer">here</a>.  
+      For an example of my data science work, see <a href="https://github.com/nenyehub/tf-image-pipeline" target="_blank" rel="noopener noreferrer">tf-image-pipeline</a> on GitHub.</p>
+
+      <p>For business inquiries, contact me at <a href="mailto:nenye@ndili.net">nenye@ndili.net</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Chinenye Ndili | <a href="mailto:nenye@ndili.net">Contact Me</a></p>
+  </footer>
 </body>
 </html>
